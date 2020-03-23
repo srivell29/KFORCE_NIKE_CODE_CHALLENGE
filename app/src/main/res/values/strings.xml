@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Dictionary App </string>
+    <string name="connection_error">Opps seems like you are offline!</string>
+    <string name="ok">OK</string>
+    <string name="type_to_search">Type to search</string>
+    <string name="thumbs_up">Thumbs Up</string>
+    <string name="thumbs_down">Thumbs Down</string>
+    <string name="dictionary_activity_no_data_found">No data found try other word!</string>
+    <string name="dictionary_activity_no_input_found">Please enter any search word ...!</string>d
+</resources>

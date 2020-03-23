@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipToPadding="true"
+    android:id="@+id/cv_search_results"
+    android:background="@android:color/white"
+    app:cardCornerRadius="@dimen/margin_8dp"
+    app:cardElevation="@dimen/margin_4dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cl_search_results"
+        android:background="@android:color/white"
+        android:padding="@dimen/margin_16dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_search_word"
+            android:layout_width="@dimen/margin_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_32dp"
+            android:textSize="@dimen/medium_text"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toStartOf="@id/tv_dis_likes_count"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@tools:sample/cities" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_search_word_definition"
+            android:layout_width="@dimen/margin_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_4dp"
+            android:layout_marginEnd="@dimen/margin_32dp"
+            android:textSize="@dimen/small_text"
+            android:textStyle="italic"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toStartOf="@id/tv_dis_likes_count"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_search_word"
+            tools:text="@tools:sample/cities" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_like"
+            android:layout_width="@dimen/margin_24dp"
+            android:layout_height="@dimen/margin_24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_like"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_like_green_24dp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_dis_like"
+            android:layout_width="@dimen/margin_24dp"
+            android:layout_height="@dimen/margin_24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_like"
+            app:layout_constraintVertical_bias="1"
+            app:srcCompat="@drawable/ic_dis_like_red_24dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_likes_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_8dp"
+            android:textColor="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toStartOf="@id/iv_like"
+            app:layout_constraintTop_toTopOf="@id/iv_like"
+            tools:text="16" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_dis_likes_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_8dp"
+            android:textColor="@android:color/holo_red_dark"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_dis_like"
+            app:layout_constraintEnd_toStartOf="@id/iv_dis_like"
+            app:layout_constraintTop_toTopOf="@id/iv_dis_like"
+            tools:text="16" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

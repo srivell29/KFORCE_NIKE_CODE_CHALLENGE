@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/actionSortUp"
+        android:icon="@drawable/ic_like_white_24dp"
+        android:title="@string/thumbs_up"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/actionSortDown"
+        android:icon="@drawable/ic_dis_like_white_24dp"
+        android:title="@string/thumbs_down"
+        app:showAsAction="always" />
+</menu>
